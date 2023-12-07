@@ -296,7 +296,7 @@ position: relative;
     align-items: center;
  }
 
- .partie1 h2{
+ #contact h2{
     font-size: 2rem;
     font-weight: 900;
     color: var(--var-text-color-dark);
@@ -331,7 +331,7 @@ height: 100px;
    border:1px solid var(--var-bg-color);
  }
 
- .partie2 form buttom {
+ .partie2 form button {
    background: var(--var-bg-color);
    color: var(--var-text-color);
    border: none;
