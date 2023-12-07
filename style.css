@@ -103,10 +103,11 @@ main{
 }
 
 #hero .gauche h1{
-   font-size: 3rem;
+   font-size: 2rem;
    font-weight: 900;
    color: var(--var-text-color); 
 }
+
 
 #hero .gauche p{
     font-size: clamp(1rem,2vw,1rem);
@@ -262,11 +263,13 @@ position: relative;
  
 
  #album .photo{
+   
     display: grid;
     grid-template-columns: repeat(2,1fr);
  }
  
  .photo img{
+   flex: 2;
     width: 100%;
     border-radius: 5px;
  }
@@ -431,5 +434,27 @@ color:var(--var-text-color-dark) ;
    #contact{
       min-height: 100vh;
       flex-direction: column;
+   }
+}
+
+
+
+
+.droite img{
+   position: relative;
+   /* width: 300px;
+   height: 300px; */
+   transform-style: preserve-3d;
+   transform: rotateY(-30deg);
+   animation: animate 5s linear infinite;
+}
+@keyframes animate{
+   0%
+   {
+       transform: rotateX(-20deg) rotateY(0deg);
+   }
+   100%
+   {
+       transform: rotateX(-20deg) rotateY(360deg);
    }
 }
